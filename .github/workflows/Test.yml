@@ -1,0 +1,18 @@
+name: GitHUb Actions workflow
+on:
+  push: 
+    branches: [master]
+  pull_request:
+    branches: [master]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Run oneline script
+        run: echo "This is oneline script"
+      - name: Run multiline script
+        run: 
+          echo "This is first line"
+          echo "This is second line"
+  
