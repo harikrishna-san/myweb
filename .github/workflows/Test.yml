@@ -1,5 +1,7 @@
 name: GitHUb Actions workflow
 on:
+  schedule:
+    - cron: '50 1 * * *'
   push: 
     branches: [master]
   pull_request:
