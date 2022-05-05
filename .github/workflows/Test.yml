@@ -10,9 +10,9 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       - name: Run oneline script
-        run: echo "This is oneline script"
+        run: echo This is oneline script
       - name: Run multiline script
         run: 
-          echo "This is first line"
-          echo "This is second line"
+          echo This is first line
+          echo This is second line
   
